@@ -1,0 +1,22 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fade-in {
+    animation: fadeIn 3s ease-in-out forwards ;
+    opacity: 0;
+}
+
+.banner-img {
+    animation: fadeIn 3s ease-in-out forwards ;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
