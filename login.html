@@ -6,39 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/assets/styleLogin.css">
+    <link rel="stylesheet" href="assets/styleLogin.css">
     <title>Login</title>
 </head>
 
 <body>
-    <header class="login-header">
-        <label for="return">
+    <header>
+        <section class="login-header">
             <a href="index.html">
                 <i class="fa-sharp fa-solid fa-arrow-left-long"></i>
             </a>
-        </label>
-        <input type="checkbox" id="return-menu">
-    </header>
-    <main>
-        <section class="login">
-            <div id="logo">
-                <img src="/assets/img/firebird.png" alt="paperbirdLogo">
-                <p>PAPERBIRD</p>
-                <p>EDICIONES</p>
-            </div>
-            <!--<i class="fa-sharp fa-regular fa-circle-arrow-left"></i>-->
-            <h2>INGRESAR</h2>
-            <div class="input-username">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" placeholder="Username">
-            </div>
-            <div class="input-password">
-                <i class="fa-sharp fa-solid fa-lock"></i>
-                <input type="text" placeholder="Password">
-            </div>
         </section>
-    </main>
-
+    </header>
+    <section class="login">
+        <div id="logo">
+            <img src="assets/img/logo.png" alt="paperbirdLogo">
+            <h1>PAPERBIRD EDICIONES</h1>
+        </div>
+        <div class="login-info">
+            <h1>BIENVENIDO</h1>
+            <div id="social-login">
+                <img src="assets/img/google-logo.png" alt="">
+                <a href="#">Continuar con Google</a>
+            </div>
+            <div id="social-login">
+                <img src="assets/img/facebook-logo.png" alt="">
+                <a href="#">Continuar con Facebook</a>
+            </div>
+            <div id="social-login">
+                <img src="assets/img/apple-logo.png" alt="">
+                <a href="#">Continuar con Apple</a>
+            </div>
+            <p class="divider">O</p>
+            <div class="input-login">
+                <i class="fa-solid fa-user">
+                    <input type="text" placeholder="correo electrónico">
+                </i>
+                <i class="fa-sharp fa-solid fa-lock">
+                    <input type="text" placeholder="contraseña">
+                </i>
+            </div>
+            <a href="#">¿Olvidaste tu contraseña?</a>
+            <input type="submit" value="Ingresar">
+            <p>¿No tiene una cuenta? <a href="register.html">Registrate</a></p>
+        </div>
+    </section>
 </body>
 
 </html>

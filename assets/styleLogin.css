@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+
+    --line-color: rgb(158, 157, 157);
+}
+
+.login-header {
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+
+.login-header i {
+    font-size: 48px;
+    color: black;
+    padding: 2rem;
+}
+
+.login-header i:hover {
+    color: turquoise;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    width: 60%;
+    margin: auto;
+    gap: 100px;
+}
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-right: 20px;
+}
+
+#logo img {
+    width: 300px;
+    height: auto;
+}
+
+#logo h1 {
+    font-size: 24px;
+}
+
+.login-info {
+    width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#social-login {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    border: 1px solid var(--line-color);
+}
+
+#social-login img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+#social-login a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: black;
+    border-radius: 5px;
+}
+
+#social-login a:hover {
+    font-weight: 500;
+}
+
+.divider {
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 0.5px;
+    background-color: var(--line-color)
+}
+
+.divider::before {
+    left: 0px;
+}
+
+.divider::after {
+    right: 0px;
+}
+
+.input-login {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
+.login a {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.fa-solid, .fa-sharp {
+    margin-top: 10px;
+    color: var(--line-color);
+}
+
+.input-login input i {
+    margin-top: 10px;
+    position: absolute;
+}
+
+input[type=text] {
+    color: #979797;
+    height: 28px;
+    padding-left: 10px;
+    border: none;
+    border-block-end: 0.5px solid;
+
+}
+
+/*
+ADD RESPONSIVE, A PARTIR DE 650, SOLO LOGOS DE INICIO DE SESION ,
+REDUCIR IMAGEN
+}*/
