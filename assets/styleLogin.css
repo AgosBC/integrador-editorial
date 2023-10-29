@@ -151,6 +151,7 @@
 
 input[type=text] {
     color: #979797;
+    font-style: italic;
     height: 28px;
     padding-left: 10px;
     border: none;
@@ -180,7 +181,43 @@ input[type=text] {
 }
 
 @media (max-width: 700px) {
+    .login {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #logo {
+        flex-direction: row;
+    }
+
+    #logo img {
+        width: 70px;
+        height: auto;
+        margin-right: 15px;
+    }
+
     .login-info h2 {
         font-size: 24px;
+    }
+
+    #social-login img {
+        display: contents;
+    }
+
+    .input-login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .input-login input::placeholder {
+        text-align: center;
+    }
+}
+
+@media (max-width: 300px) {
+    #social-login {
+        border: none;
     }
 }
