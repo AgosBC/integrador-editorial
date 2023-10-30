@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
-
 :root {
+    --principal-color: #0991ff;
+    --secondary-color: #62ccfd;
+
+
     --background: rgb(255, 253, 253);
     --menu-color: #000000;
     --black: #000000;
@@ -23,43 +25,141 @@
 
 header {
     width: 100%;
-    height: 50px;
     align-items: center;
+    padding: 1rem;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     background-color: white;
     position: fixed;
-    z-index: 1;
-    color: black;
+    z-index: 100;
+    background-color: white;
 }
 
-.navbar {
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+}
+
+.banner-img {
+    display: flex;
+    height: 100px;
+    z-index: 100;
+}
+
+.banner-text {
+    display: flex;
+    
+    align-items: center;
+}
+
+.banner-text h1 {
+    font-size: 38px;
+}
+
+.banner-find {
+    display: flex;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 2%;
+    gap: 5%;
+}
+
+.banner-find i {
+    font-size: 24px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.navbar-container {
     padding: 5px 30px;
     display: flex;
-
+    justify-content: space-between;
 }
 
-.navbar ul {
+.navbar-container ul {
     display: flex;
     gap: 100px;
     justify-content: space-between;
 }
 
-.navbar i {
-    display: flex;
-    flex-direction: row;
+.navbar-container ul a {
+    font-size: 24px;
+    font-weight: 400;
+    color: #3f3e3e;
+    padding: 0 30px;
+}
+
+.navbar-container ul a:hover {
+    color: #000000;
+    font-weight: 500;
+}
+
+.navbar-container i {
     font-size: 30px;
 }
 
-#toggle-menu {
+.navbar-container i:hover {
+    font-weight: 100;
+}
+
+.navbar-menu,
+.navbar-close {
     display: none;
 }
 
-.navbar a {
-    font-weight: 300;
-}
+/*HERO*/
 
+
+/*@media screen and (max-width:550px) {
+    .navbar-menu, 
+    .navbar-close {
+        display: flex;
+    }
+
+    .navbar-container i {
+        background-color: #000000;
+        color: white;
+    }
+
+    .navbar-container ul a {
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .navbar-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        top: 0;
+        left: 0;
+        position: absolute;
+        padding: 2rem;
+        background-color: black;
+    }
+
+    .navbar-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}*/
+
+
+ /*TODO*/
+/*
 @media (max-width: 576px) {
-    .navbar ul {
+    .navbar-container ul {
         background: white;
         width: 100%;
         height: calc(100vh - 50px);
@@ -72,27 +172,217 @@ header {
         display: none;
     }
 
-    .navbar i {
+    .navbar-container i {
         display: block;
     }
 
     #toggle-menu:checked~.navbar-left {
         display: flex;
     }
-}
+}*/
 
+/*fin TODO*/
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
 }
 
 #hero {
     display: flex;
-    margin-top: 100px;
+    flex-direction: column;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    padding: 300px 0px ;
+}
+
+.hero-promo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 2rem;
+}
+
+.hero-promo-img {
+    display: flex;
+    align-items: start;
+    padding: 0 50px;
+    width: 80%;
+}
+
+.hero-promo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.hero-promo-text h2 {
+    font-size: 36px;
+    font-weight: 800;
+    color: black;
+}
+
+#bttn {
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+.hero-promo-text a {
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 24px;
+}
+
+.hero-promo-text a:hover {
+    background-color: var(--principal-color);
+    font-weight: 600;
+}
+/*NOVEDADES*/
+
+.releases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 2rem;
+    width: 100%;
+    background: linear-gradient(90deg, var(--principal-color) 0%, var(--secondary-color)35%, rgba(238,244,245,1) 100%);
+}
+
+h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+.release-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 100px;
+}
+
+#release-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+
+#release-card img {
+    width: auto;
+    height: 350px;
+}
+
+#release-card p {
+    margin-top: 15px;
+    font-family:  Roboto, sans-serif;
+    font-size: 14px;
+}
+
+#release-card p span {
+    font-weight: 600;
+    color: var(--principal-color);
+}
+
+#release-card a {
+    margin-top: 14px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 14px;
+}
+
+#release-card a:hover {
+    background-color: var(--principal-color);
+    font-weight: 600;
+}
+
+/*FIN NOVEDADES*/
+
+/*SUSCRIPCION*/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+    background-color: gray;
+    /*background: linear-gradient(90deg, var(--principal-color) 0%, var(--secondary-color)35%, rgba(238,244,245,1) 100%);*/
+    gap: 10px
+}
+
+.newsletter i {
+    font-size: 64px;
+    color: white;
+}
+
+/*.newsletter h3 {
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+}*/
+
+.newsletter p {
+    color: white;
+}
+
+.newsletter input {
+    width: 50%;
+}
+
+.newsletter input::placeholder {
+    font-style: italic;
+}
+
+.newsletter a {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.newsletter a:hover {
+    color: var(--principal-color);
+    font-weight: 600;
+    box-shadow: 1px 1px 3px var(--principal-color);
+}
+
+/*SUSCRIPCION COMPLETA*/
+
+
+
+
+/*#hero {
+    display: flex;
+    flex-direction: column;*/
+    /*background-image: url(../assets/img/img-principal.png);
+    background-size: cover;*/
+   /* width: 100%;
+    
     padding: 50px 0;
+}*/
+
+/*.hero-promo-img {
+    display: flex;
+    width: 60%;
+}
+
+#hero h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: rgb(253, 73, 8);
 }
 
 .hero-title {
@@ -106,12 +396,20 @@ main {
 #hero h3 {
     font-style: italic;
     color: dimgray;
-}
+}   
 
 .hero-img img {
     display: flex;
     flex-direction: column;
+
 }
+
+.ejemplo {
+    background-image: url(../assets/img/img-principal.png);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}*/
 
 
 /*footer*/
@@ -147,24 +445,7 @@ main {
 */
 
 
-/* .navbar {
-    background-color: #333;
-    overflow: hidden; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar li {
-    display: inline;
-}
+/*
 
 .left-menu {
     float: left;
@@ -208,32 +489,19 @@ main {
 } */
 
 
-/*.navBar {
+/*LOGIN*/
+.login-header {
     display: flex;
-    list-style: none;
+    height: 100px;
 }
 
-.navBarList {
+.login-header i {
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: left;
 }
 
-.navBarSecondary {
-    align-items: center;
-    justify-content: space-around;
-
-}
-.navBar {
-    text-decoration: none;
-    gap: 100px;
-}
-
-.navBarList {
-    gap: 25px;
-}
-
-.navBarList a {
-    color: var(--text-white);
-    font-size: 16px;
-    font-weight: 500;
-} */

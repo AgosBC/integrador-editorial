@@ -149,7 +149,8 @@
     position: absolute;
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
     color: #979797;
     font-style: italic;
     height: 28px;
@@ -158,24 +159,21 @@ input[type=text] {
     border-block-end: 0.5px solid;
 }
 
-#action-btn {
+#bttn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--principal-color);
-    width: 150px;
-    height: 40px;
-    border-radius: 20px;
+    padding: 8px 12px;
+    border-radius: 10px;
     color: white;
     font-weight: 400px;
     font-size: 24px;
 }
 
-#action-btn:hover {
+#bttn:hover {
     background-color: white;
-    border-style: solid;
-    border-radius: 20px;
     color: var(--principal-color);
 
 }
