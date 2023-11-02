@@ -3,12 +3,13 @@
         box-shadow: 0 0;
     }
 
-   
+
     .banner-container {
         justify-content: center;
         gap: 5%;
     }
-    .banner-container img{
+
+    .banner-container img {
         height: 70px;
     }
 
@@ -20,12 +21,12 @@
         padding: 0 0;
     }
 
-    .navbar-list{
+    .navbar-list {
         display: none;
     }
 
     #navbar-login {
-        display:flex;
+        display: flex;
     }
 
     .navbar-list a {
@@ -45,7 +46,7 @@
         display: block;
     }
 
-    #navbar-menu:checked ~ .navbar-list {
+    #navbar-menu:checked~.navbar-list {
         display: flex;
         position: absolute;
         flex-direction: column;
@@ -59,7 +60,7 @@
         transition: left 0.3s;
     }
 
-    #navbar-menu:checked ~ .navbar-list {
+    #navbar-menu:checked~.navbar-list {
         left: 0;
     }
 
@@ -71,8 +72,19 @@
         font-size: 24px
     }
 
-    .hero-info #bttn{
+    .hero-info #bttn {
         font-size: 14px;
+    }
+
+    .about-mission,
+    .about-purpose,
+    .about-location {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about img {
+        width: 100%;
     }
 
     #news-card img {
