@@ -137,7 +137,7 @@ main {
     background-image: url(./img/beach-reads-hero.jpg);
     background-size: cover;
     background-position: center;
-    height: 600px;
+    height: calc(80vh - 20vh);
     background-color: rgb(255 244 228);
     padding: 1rem;
 }
@@ -515,10 +515,6 @@ footer h3 {
         display: none;
     }
 
-    .hero {
-        height: 300px;
-    }
-
     .hero h2 {
         font-size: 24px
     }
@@ -526,7 +522,6 @@ footer h3 {
     #news-card img {
         display: none;
     }
-
 
     #news-card {
         margin-top: 10px;
