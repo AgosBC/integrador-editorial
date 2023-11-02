@@ -1,0 +1,85 @@
+@media screen and (max-width:992px) {
+    .header {
+        box-shadow: 0 0;
+    }
+
+   
+    .banner-container {
+        justify-content: center;
+        gap: 5%;
+    }
+    .banner-container img{
+        height: 70px;
+    }
+
+    .banner-container h1 {
+        font-size: 28px;
+    }
+
+    .navbar {
+        padding: 0 0;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+
+    #navbar-login {
+        display:flex;
+    }
+
+    .navbar-list a {
+        color: white;
+    }
+
+    .navbar-list a:hover {
+        color: white;
+        font-weight: 600;
+    }
+
+    #login-icon {
+        display: none;
+    }
+
+    .navbar label {
+        display: block;
+    }
+
+    #navbar-menu:checked ~ .navbar-list {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 200px;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        background: var(--secondary-color);
+        transition: left 0.3s;
+    }
+
+    #navbar-menu:checked ~ .navbar-list {
+        left: 0;
+    }
+
+    .banner-find {
+        display: none;
+    }
+
+    .hero h2 {
+        font-size: 24px
+    }
+
+    .hero-info #bttn{
+        font-size: 14px;
+    }
+
+    #news-card img {
+        display: none;
+    }
+
+    #news-card {
+        margin-top: 10px;
+    }
+}
