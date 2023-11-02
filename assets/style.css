@@ -14,8 +14,7 @@
     list-style-type: none;
 }
 
-body,
-footer {
+body {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -491,6 +490,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     padding: 2rem;
     gap: 10px;
     background-color: var(--secondary-color);
