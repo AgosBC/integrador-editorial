@@ -114,60 +114,9 @@ input[type="text"] {
 }
 
 
-@media screen and (max-width:850px) {
-    .navbar-list{
-        display: none;
-    }
-
-    #navbar-login {
-        display:flex;
-    }
-
-    .navbar-list a {
-        color: white;
-    }
-
-    .navbar-list a:hover {
-        color: white;
-        font-weight: 600;
-    }
-
-    #login-icon {
-        display: none;
-    }
-
-    .navbar label {
-        display: block;
-    }
-
-    #navbar-menu:checked ~ .navbar-list {
-        display: flex;
-        position: absolute;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        top: 200px;
-        left: -100%;
-        width: 40%;
-        height: 100vh;
-        background: var(--secondary-color);
-        transition: left 0.3s;
-    }
-
-    #navbar-menu:checked ~ .navbar-list {
-        left: 0;
-    }
-
-    .banner-find {
-        display: none;
-    }
-
-}
-
 main {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -189,7 +138,7 @@ main {
     background-size: cover;
     background-position: center;
     height: 600px;
-    /*background-color: rgb(255 244 228);*/
+    background-color: rgb(255 244 228);
     padding: 1rem;
 }
 
@@ -207,7 +156,6 @@ main {
 .hero-info a {
     background-color: var(--secondary-color);
     color: white;
-    font-size: 24px;
     text-align: center;
     font-weight: 600;
 }
@@ -363,47 +311,6 @@ h3 {
     font-weight: 600;
 }
 
-/*SUSCRIPCION*/
-
-.newsletter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap; 
-    align-content: center;
-    padding: 2rem;
-    width: 100%;
-    background-color: gray;
-    gap: 10px
-}
-
-.newsletter i {
-    font-size: 64px;
-    color: white;
-}
-
-.newsletter p {
-    color: white;
-}
-
-.newsletter input {
-    width: 50%;
-}
-
-.newsletter input::placeholder {
-    font-style: italic;
-}
-
-.newsletter a {
-    background-color: white;
-    color: var(--secondary-color);
-}
-
-.newsletter a:hover {
-    color: var(--principal-color);
-    font-weight: 600;
-    box-shadow: 1px 1px 3px var(--principal-color);
-}
 
 /*NEWS*/
 
@@ -483,11 +390,52 @@ h3 {
     padding: 1rem;
 }
 
+/*SUSCRIPCION*/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; 
+    align-content: center;
+    padding: 2rem;
+    width: 100%;
+    background-color: gray;
+    gap: 10px
+}
+
+.newsletter i {
+    font-size: 64px;
+    color: white;
+}
+
+.newsletter p {
+    color: white;
+}
+
+.newsletter input {
+    width: 50%;
+}
+
+.newsletter input::placeholder {
+    font-style: italic;
+}
+
+.newsletter a {
+    background-color: white;
+    color: var(--secondary-color);
+}
+
+.newsletter a:hover {
+    color: var(--principal-color);
+    font-weight: 600;
+    box-shadow: 1px 1px 3px var(--principal-color);
+}
+
 /*FOOTER*/
 
 .footer {
     display: flex;
-    flex-wrap: wrap; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -516,4 +464,71 @@ footer h3 {
 .footer-legal p {
     font-size: 12px;
     text-align: center;
+}
+
+
+@media screen and (max-width:850px) {
+    .navbar-list{
+        display: none;
+    }
+
+    #navbar-login {
+        display:flex;
+    }
+
+    .navbar-list a {
+        color: white;
+    }
+
+    .navbar-list a:hover {
+        color: white;
+        font-weight: 600;
+    }
+
+    #login-icon {
+        display: none;
+    }
+
+    .navbar label {
+        display: block;
+    }
+
+    #navbar-menu:checked ~ .navbar-list {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 200px;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        background: var(--secondary-color);
+        transition: left 0.3s;
+    }
+
+    #navbar-menu:checked ~ .navbar-list {
+        left: 0;
+    }
+
+    .banner-find {
+        display: none;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h2 {
+        font-size: 24px
+    }
+
+    #news-card img {
+        display: none;
+    }
+
+
+    #news-card {
+        margin-top: 10px;
+    }
 }
