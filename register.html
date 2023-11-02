@@ -1,25 +1,57 @@
 <!--nombre apellido mail telc nombre de user contraseña-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/login.css">
     <title>Register</title>
 </head>
-<body>
-    <p>Nombre<input type="text" name="name" placeholder="Nombre"></p>
-    <input type="text" name="lastname" placeholder="Apellido">
 
-    <!--lista de opciones-->
-    <select name="country" id="country">
-        <option value="argentina"> Argentina </option>
-        <option value="brazil">Brazil</option>
-        <option value="parauay">Paraguay</option>
-        <option value="uruguay">Urguay</option>
-        <option value="chile">Chile</option>
-    </select>
-    <!--botton-->
-    <input type="button">
+<body>
+    <section class="register">
+        <div id="logo">
+            <img src="assets/img/logo.png" alt="paperbirdLogo">
+            <h1>PAPERBIRD EDICIONES</h1>
+        </div>
+        <div class="register-info">
+            <h2>BIENVENIDO</h2>
+            <div id="inputs">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="Nombre" id="name">
+                </div>
+                <div>
+                    <label for="lastname">Apellido</label>
+                    <input type="text" name="Apellido" id="lastname">
+                </div>
+                <div>
+                    <label for="country">Nacionalidad</label>
+                    <select name="country" id="country">
+                        <option value="argentina"> Argentina </option>
+                        <option value="brazil">Brazil</option>
+                        <option value="parauay">Paraguay</option>
+                        <option value="uruguay">Urguay</option>
+                        <option value="chile">Chile</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="birthdate">Fecha de nacimiento</label>
+                    <input type="date" name="birthdate" id="birthdate">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" , id="email">
+                </div>
+                <div>
+                    <label for="password">Contraseña</label>
+                    <input type="password" name="password" , id="password">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
