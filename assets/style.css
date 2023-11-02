@@ -114,7 +114,7 @@ input[type="text"] {
 }
 
 
-@media (max-width:1125px) {
+@media screen and (max-width:1125px) {
     .navbar-list{
         display: none;
     }
