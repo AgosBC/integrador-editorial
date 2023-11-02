@@ -400,8 +400,8 @@ h3 {
     align-content: center;
     padding: 2rem;
     width: 100%;
+    gap: 10px;
     background-color: gray;
-    gap: 10px
 }
 
 .newsletter i {
@@ -517,6 +517,10 @@ footer h3 {
 
     .hero h2 {
         font-size: 24px
+    }
+
+    .hero-info #bttn{
+        font-size: 14px;
     }
 
     #news-card img {
