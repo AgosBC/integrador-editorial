@@ -105,6 +105,10 @@ input[type="text"] {
 
 
 @media screen and (max-width:1125px) {
+    body {
+        width: 100%;
+    }
+   
     .navbar-list{
         display: none;
     }
@@ -138,8 +142,8 @@ input[type="text"] {
         justify-content: space-around;
         top: 200px;
         left: -100%;
-        width: 25%;
-        height: 85vh;
+        width: 40%;
+        height: 100vh;
         background: var(--secondary-color);
         transition: left 0.3s;
     }
