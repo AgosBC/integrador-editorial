@@ -1,6 +1,7 @@
 :root {
     --principal-color: #0991ff;
     --secondary-color: #62ccfd;
+    --light-gray: #cccccc;
 }
 
 * {
@@ -17,9 +18,10 @@ header {
     width: 100%;
     align-items: center;
     padding: 1rem;
-    /*box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);*/
-    /*position: fixed;
-    z-index: 100;*/
+    box-shadow: 0 0 8px var(--light-gray);
+    /*top: 0;
+    position: fixed;
+    z-index: 1;*/
     /*background-color: #b7e5fa;*/
 }
 
@@ -27,23 +29,17 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin-left: 5px;
     margin-right: 5px;
-    width: 100%;
 }
 
-.banner-img {
+.banner-container img {
     display: flex;
     height: 100px;
-    z-index: 100;
 }
 
-.banner-text {
-    display: flex;
-    align-items: center;
-}
-
-.banner-text h1 {
+.banner-container h1 {
     font-size: 38px;
 }
 
@@ -63,117 +59,91 @@ header {
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--light-gray);
     border-radius: 20px;
     font-style: italic;
 }
 
-.navbar-container {
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0px 30px;
     margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
-
 }
 
-.navbar-container ul {
-    display: flex;
-    gap: 15%;
-    justify-content: space-between;
+#navbar-menu,
+.navbar label,
+#navbar-login {
+    display: none;
 }
 
-.navbar-container ul a {
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-list a {
     font-size: 20px;
     font-weight: 400;
-    color: #3f3e3e;
+    color: gray;
     padding: 0 30px;
 }
 
-.navbar-container ul a:hover {
+.navbar-list a:hover {
     color: #000000;
     font-weight: 500;
 }
 
-.navbar-container i {
+.navbar i {
     font-size: 30px;
 }
 
-.navbar-container i:hover {
+.navbar i:hover {
     font-weight: 100;
 }
 
-.navbar-menu,
-.navbar-close {
-    display: none;
-}
 
-/*HERO*/
-
-
-/*@media screen and (max-width:550px) {
-    .navbar-menu, 
-    .navbar-close {
-        display: flex;
+@media screen and (max-width:1125px) {
+    #navbar-login {
+        display:flex;
     }
 
-    .navbar-container i {
-        background-color: #000000;
+    .navbar-list a {
         color: white;
     }
 
-    .navbar-container ul a {
-        display: flex;
-        flex-direction: column;
+    .navbar-list a:hover {
         color: white;
+        font-weight: 600;
     }
 
-    .navbar-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        top: 0;
-        left: 0;
-        position: absolute;
-        padding: 2rem;
-        background-color: black;
-    }
-
-    .navbar-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-}*/
-
-
-/*TODO*/
-/*
-@media (max-width: 576px) {
-    .navbar-container ul {
-        background: white;
-        width: 100%;
-        height: calc(100vh - 50px);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    #login-icon {
         display: none;
     }
 
-    .navbar-container i {
+    .navbar label {
         display: block;
     }
 
-    #toggle-menu:checked~.navbar-left {
-        display: flex;
+    #navbar-menu:checked ~ .navbar-list {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        top: 200px;
+        left: -100%;
+        width: 25%;
+        height: 85vh;
+        background: var(--secondary-color);
+        transition: left 0.3s;
     }
-}*/
 
-/*fin TODO*/
+    #navbar-menu:checked ~ .navbar-list {
+        left: 0;
+    }
+}
+
 main {
     display: flex;
     flex-direction: column;
@@ -215,8 +185,6 @@ main {
     font-size: 48px;
     margin-bottom: 25px;
 }
-
-
 
 .hero-info a {
     background-color: var(--secondary-color);
@@ -384,7 +352,6 @@ h3 {
     padding: 2rem;
     width: 100%;
     background-color: gray;
-    /*background: linear-gradient(90deg, var(--principal-color) 0%, var(--secondary-color)35%, rgba(238,244,245,1) 100%);*/
     gap: 10px
 }
 

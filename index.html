@@ -17,49 +17,30 @@
 <body>
     <header>
         <section id="banner" class="banner-container">
-            <div class="banner-img">
-                <img src="./assets/img/logo.png" alt="logo">
-            </div>
-            <div class="banner-text">
-                <h1 class="fade-in">PAPERBIRD EDICIONES</h1>
-            </div>
+            <img src="./assets/img/logo.png" alt="logo">
+            <h1 class="fade-in">PAPERBIRD EDICIONES</h1>
             <div class="banner-find">
                 <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="¿Qué buscas?">
             </div>
         </section>
 
-        <section id="navbar">
-            <button class="navbar-menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <nav class="navbar-container">
-                <button class="navbar-close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-                <ul class="navbar-list">
-                    <li><a href="#about">Nosotros </a></li>
-                    <li><a href="#releases">Novedades</a></li>
-                    <li><a href="#news">Noticias</a></li>
-                    <li><a href="#hero">Catalogo</a></li>
-                    <li><a href="#">Eventos</a></li>
-                </ul>
-                <a href="login.html">
-                    <i class="fa-solid fa-circle-user" style="color: #07aac0;"></i>
-                </a>
+        <nav class="navbar">
+            <label for="navbar-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="navbar-menu">
+            <ul class="navbar-list">
+                <li><a href="#about">Nosotros </a></li>
+                <li><a href="#releases">Novedades</a></li>
+                <li><a href="#news">Noticias</a></li>
+                <li><a href="#hero">Catalogo</a></li>
+                <li><a href="#newsletter">Eventos</a></li>
+                <li id="navbar-login"><a href="login.html">Login</a></li>
+            </ul>
+            <a id="login-icon" href="login.html">
+                <i class="fa-solid fa-circle-user" style="color: #07aac0;"></i>
+            </a>
+        </nav>
 
-                <!--MENU HAMBURGUESA-->
-
-
-
-
-
-
-
-
-
-            </nav>
-        </section>
     </header>
     <main>
         <section class="hero" id="hero">
@@ -181,7 +162,7 @@
             </div>
         </section>
 
-        <section class="newsletter">
+        <section class="newsletter" id="newsletter">
             <i class="fa-regular fa-envelope-open"></i>
             <h3>SUSCRIBITE A NUESTRO NEWSLETTER</h3>
             <p>Recibí informacion sobre nuestros próximos eventos, lanzamientos y adelantos exclusivos</p>
@@ -208,7 +189,7 @@
             </ul>
         </section>
         <section class="footer-legal">
-            <p>@2023 brand All stories, art, and posts are the copyright of their respective authors</p>
+            <p>@2023 Paperbird. All stories, art, and posts are the copyright of their respective authors</p>
             <p>Agostina Barello</p>
         </section>
     </footer>
