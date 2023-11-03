@@ -5,7 +5,7 @@
 
     .banner-container {
         justify-content: center;
-        gap: 5%;
+        gap: 15%;
     }
 
     .banner-container img {
@@ -14,6 +14,7 @@
 
     .banner-container h1 {
         font-size: 28px;
+
     }
 
     .navbar {
