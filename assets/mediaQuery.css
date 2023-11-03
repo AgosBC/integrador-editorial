@@ -51,10 +51,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        top: 200px;
+        top: 160px;
         left: -100%;
         width: 40%;
-        height: 100vh;
+        height: 60vh;
         background: var(--secondary-color);
         transition: left 0.3s;
     }
