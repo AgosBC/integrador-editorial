@@ -226,6 +226,20 @@ input[type=password] {
     flex: 1;
 }
 
+#check-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+}
+
+#check-box p {
+    color: gray;
+}
+
+.register-info #bttn {
+    font-size: 18px;
+}
+
 
 @media (max-width: 992px) {
 
